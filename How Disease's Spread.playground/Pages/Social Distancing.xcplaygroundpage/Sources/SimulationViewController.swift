@@ -111,7 +111,6 @@ public class SimulationViewController: UIViewController {
         _t = t
         
         setupView()
-//        setupSounds()
     }
     
     public override func viewWillLayoutSubviews() {

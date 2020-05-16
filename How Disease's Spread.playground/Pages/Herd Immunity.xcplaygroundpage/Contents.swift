@@ -6,7 +6,7 @@
 Tweak **alpha** (α) to make sure the hospitals don't go over capacity (60), but also try to have more than 50% of the population get the disease to obtain herd immunity.
 */
 
-var α: Int = 10          // Number of daily contacts. Average is 24
+var α: Int = 24          // Number of daily contacts. Average is 24
 var ρ: CGFloat = 0.01        // Probability of disease spread. For the flu this is 0.01
 var I: Int = 3           // The number of initially infected people.
 var t: Int = 100         // The length of the simulation (in days).

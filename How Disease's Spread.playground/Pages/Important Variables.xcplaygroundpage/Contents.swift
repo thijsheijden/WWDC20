@@ -22,12 +22,7 @@ var ρ: CGFloat = 0.01   // For the flu this is 0.01
 
 /*:
  Try out some different values for both parameters and see what they do. When you feel like you have a basic understanding of them, continue to the [next page](@next), to learn about social distancing!
- */
-
-/*:
- - Note:
- Please keep in mind that due to the 3 minute length restriction this is all very simplified and missing a lot of important details.
- */
+*/
 
 import UIKit
 import PlaygroundSupport

@@ -9,7 +9,7 @@ Tweak **alpha** (α) and then execute the playground. The hospital maximum capac
 ![Color code for the simulation.](Guide.png)
  */
  
-var α: Int = 9          // Number of daily contacts. Average is 24
+var α: Int = 24          // Number of daily contacts. Average is 24
 var ρ: CGFloat = 0.01   // Probability of disease spread. For the flu this is 0.01
 var I: Int = 3          // The number of initially infected people.
 var t: Int = 100        // The length of the simulation (in days).

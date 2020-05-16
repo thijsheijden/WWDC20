@@ -148,7 +148,7 @@ public class SimulationDoneView: UIView {
                     explanationLabel.attributedText = NSMutableAttributedString()
                     .normal("You got the peak down to", 16)
                     .bold(" \(String(describing: peak!)), ", 16)
-                    .normal("nice job! Now the hospitals could help everyone!\n\nThe simulation did however end prematurely, so you could try running it again.", 16)
+                    .normal("nice job! Now the hospitals could help everyone!", 16)
                 } else {
                     successLabel.text = "Uh-Oh!"
                     explanationLabel.attributedText = NSMutableAttributedString()
@@ -168,11 +168,10 @@ public class SimulationDoneView: UIView {
                 } else {
                     successLabel.text = "Uh-Oh!"
                     explanationLabel.attributedText = NSMutableAttributedString()
-                    .normal("You got the peak down to", 16)
-                    .bold(" \(String(describing: peak!)), ", 16)
-                    .normal("and", 16)
+                        .normal(peak > 60 ? "The peak was too high for the hospitals at" : "Nice, you got the peak down to", 16)
+                    .bold(" \(String(describing: peak!)).\n\n", 16)
                        .bold(" \(String(describing: immunity!))", 16)
-                    .normal("% of the population has immunity, however, it was not enough!\n\nThis is probably because the simulation ended permaturely. Try running the simulation again.", 16)
+                        .normal(immunity! < 50.0 ? "% of the population has immunity, try getting that number higher. This could also be because the simulation ended permaturely. Perhaps try running the simulation again." : "% of the population has immunity, nice job!", 16)
                 }
             }
             // The simulation did end prematurely, rerun simulation?
